@@ -31,49 +31,49 @@ system and inform any implementation choices.
 
 #### Primary Deliverables
 
-- [ ] Create a Spring Native sample Spring Boot application.
-- [ ] Make any necessary modifications to Spring Native to make my sample code
+- [x] Create a Spring Native sample Spring Boot application.
+- [x] Make any necessary modifications to Spring Native to make my sample code
     compile and run.
-- [ ] Write documentation explaining how to build and run my sample
+- [x] Write documentation explaining how to build and run my sample
     application.
-- [ ] Bonus: Ensure that my sample application is built/tested at some point in
+- [x] Bonus: Ensure that my sample application is built/tested at some point in
     the Spring Native build/test process. Can it be used as one of the Spring
     Native project's integration tests.
 
 ### Action Items Ideas
 
-- [ ] Read through the [Spring Native documentation][spring-native-docs].
-  - [ ] Can the [Spring Initializr][spring-initializr] help me get started?
+- [x] Read through the [Spring Native documentation][spring-native-docs].
+  - [x] Can the [Spring Initializr][spring-initializr] help me get started?
   - [ ] Which will I be using: "Buildpacks" or "Native Build Tools".
       (Hopefully the latter.)
-- [ ] What is ActiveMQ? How is it related to JMS?
-- [ ] Does my sample program against an ActiveMQ API or against JMS? Will
+- [x] What is ActiveMQ? How is it related to JMS?
+- [x] Does my sample program against an ActiveMQ API or against JMS? Will
     ActiveMQ be a JMS provider?
-- [ ] Using ActiveMQ persistence likely adds configuration and operations
+- [x] Using ActiveMQ persistence likely adds configuration and operations
     complexity that we may not care about. Can we ignore persistence?
-- [ ] Similarly, can we ignore ActiveMQ's high availability features?
-- [ ] What magic is `spring-boot-starter-activemq` providing? Where is this
+- [x] Similarly, can we ignore ActiveMQ's high availability features?
+- [x] What magic is `spring-boot-starter-activemq` providing? Where is this
     dependency defined/implemented?
-- [ ] Will I be using a ActiveMQ as a standalone process or embedded?
-- [ ] Will I be using ActiveMQ "Classic" or ActiveMQ Artemis?
-- [ ] Read [Issue #438][issue-438].
-- [ ] How is ActiveMQ added to an application? How is it configured? What
+- [x] Will I be using a ActiveMQ as a standalone process or embedded?
+- [x] Will I be using ActiveMQ "Classic" or ActiveMQ Artemis?
+- [x] Read [Issue #438][issue-438].
+- [x] How is ActiveMQ added to an application? How is it configured? What
     operations overhead does it add? Can it be embedded?
-- [ ] What is the `JmsTemplate` bean, and how do I implement one to wrap a
+- [x] What is the `JmsTemplate` bean, and how do I implement one to wrap a
     simple text message? What magic does this bean perform?
-- [ ] Read a pre-existing sample application.
+- [x] Read a pre-existing sample application.
   - [ ] Do any of them use `spring-boot-starter-activemq`?
-  - [ ] What build tool do they use?
-- [ ] What are the conventions surrounding any pre-existing sample
+  - [x] What build tool do they use?
+- [x] What are the conventions surrounding any pre-existing sample
     applications? In particular, are any automatically built or tested? If so,
     how?
-- [ ] Check that the sample application builds and runs on the following
+- [x] Check that the sample application builds and runs on the following
     platforms:
 
-  - [ ] Linux + Java 11
-  - [ ] macOS + Java 11
-  - [ ] Linux + Java 11 native-image
-  - [ ] macOS + Java 11 native-image
+  - [x] Linux + Java 11
+  - [x] macOS + Java 11
+  - [x] Linux + Java 11 native-image
+  - [x] macOS + Java 11 native-image
 
    (For Linux, I'll use Fedora 34. For macOS, I'll use v11.5.)
 
@@ -81,12 +81,12 @@ system and inform any implementation choices.
 - [ ] If spring boot applications need to be deployed as multiple processes,
     how are these conventionally compiled, configured and organized? Is there
     Spring magic involved in getting them to work with each other?
-- [ ] The [Spring Native "Getting Started"][spring-native-getting-started]
+- [x] The [Spring Native "Getting Started"][spring-native-getting-started]
     documentation says that there are two ways to build a Spring Boot native
     application. Which of these are relevant here.
-- [ ] What are Native hints? This was a recommended approach in the issue.
-- [ ] Read the [Messaging with JMS][messaging-with-jms] Spring guide.
-- [ ] Do I want to include Spring AOT?
+- [x] What are Native hints? This was a recommended approach in the issue.
+- [x] Read the [Messaging with JMS][messaging-with-jms] Spring guide.
+- [x] Do I want to include Spring AOT?
 
 ## Problem 2: Investigate Spring WebFlux with Netty Samples
 
