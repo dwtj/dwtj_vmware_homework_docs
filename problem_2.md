@@ -23,7 +23,7 @@ I started working on this problem by working on two different questions:
 
 1. What tools are available to me to help me inspect and profile memory usage of
 a `native-image` generated Java application?
-2. How does the `webflux-netty` sample integration test already measuring memory
+2. How does the `webflux-netty` sample integration test already meaure memory
 usage?
 
 ## Question 1: What Tooling Is Available?
@@ -106,12 +106,12 @@ I was curious about the behavior of the server across two dimensions:
 
 I wanted some more data describing the behavior of the server across these two
 dimensions. So I wrote a [test script][test-script] to help collect such data.
-This test script
+This test script:
 
 - starts the server
 - starts periodic client requests in the background
-- periodically uses the `ps` command to collects three memory usage
-measurements: RSS, SIZE, and VSIZE.
+- periodically uses the `ps` command to collect three memory usage measurements:
+RSS, SIZE, and VSIZE.
 
 RSS, SIZE, and VSIZE are defined in the `ps` man page like this:
 
@@ -176,7 +176,8 @@ memory is physically resident or not.
 I am curious about how this application behaves when it is run with the JVM.
 Will the JVM's RSS behave more similarly to Java 8 or Java 11?
 
-Does this problem also arise on different operating systems like macOS and Windows? What about different Linux kernel versions or configurations?
+Does this problem also arise on different operating systems like macOS and
+Windows? What about different Linux kernel versions or configurations?
 
 Memory usage data was collected while there was no global OS memory pressure
 (i.e., physical usage was nowhere close to the physical limit). Maybe with
@@ -195,7 +196,7 @@ server keep up? Does it remain responsive under load? Does the server remain
 responsive when it reaches its memory usage plateau?
 
 It is my understanding that in both the Java 8 and Java 11 cases, the same
-garbage collector is being use: `serial`. However, is there a relevant
+garbage collector is being used: `serial`. However, is there a relevant
 difference related to garbage collection? Could the garbage collector be keeping
 some memory from being paged out?
 
